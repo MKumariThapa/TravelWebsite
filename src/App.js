@@ -9,12 +9,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // animation
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Router from "./Router";
+import RouterComp from "./RouterComp";
 AOS.init();
 function App() {
   return (
     <>
-      <Router />
+      <RouterComp />
     </>
   );
 }

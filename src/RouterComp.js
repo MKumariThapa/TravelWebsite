@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 
-const Router = () => {
+const RouterComp = () => {
   return (
     <>
       {" "}
@@ -26,4 +26,4 @@ const Router = () => {
   );
 };
 
-export default Router;
+export default RouterComp;
