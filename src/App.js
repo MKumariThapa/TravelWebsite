@@ -1,5 +1,6 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Home from "./pages/Home";
@@ -11,7 +12,7 @@ import "aos/dist/aos.css";
 AOS.init();
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Routes>
         {/* <Route path="/" element={<Home />}> */}
@@ -23,7 +24,7 @@ function App() {
           <Route path="*" element={<NoPage />} /> */}
         {/* </Route> */}
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
