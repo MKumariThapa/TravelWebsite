@@ -14,7 +14,7 @@ AOS.init();
 function App() {
   return (
     <>
-      <BrowserRouter basename="/TravelWebsite">
+      <BrowserRouter>
         <Navbar />
         <Routes>
           {/* <Route path="/" element={<Home />}> */}
