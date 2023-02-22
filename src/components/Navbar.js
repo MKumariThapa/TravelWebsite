@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { getTopNav } from "./DataNavbar";
 import "./Navbar.css";
 import { TbBrandTelegram } from "react-icons/tb";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const [navItems, setNavItems] = useState([]);
   const [collapse, setCollapse] = useState("nav__menu");
@@ -28,11 +30,7 @@ const Navbar = () => {
         {/* <div className="container_main"> */}
         <nav className="nav ">
           {/* <nav className="nav_nav"> */}
-          <a
-            href="/"
-            className="nav__brand"
-            // data-aos="fade-right"
-          >
+          <a href="/" className="nav__brand">
             <TbBrandTelegram />
             Travel
           </a>
@@ -45,9 +43,12 @@ const Navbar = () => {
           >
             {navItems.map((item) => (
               <li key={item.id} className="nav__item">
-                <a href={item.href} className="nav__link">
+                <Link to={item.href} className="nav__link">
                   {item.label}
-                </a>
+                </Link>
+                {/* <a href={item.href} className="nav__link">
+                  {item.label}
+                </a> */}
               </li>
             ))}
           </ul>
