@@ -1,0 +1,20 @@
+.mainContainer {
+  display: flex;
+  /* background-color: orange; */
+  width: 90%;
+  height: 12rem;
+}
+
+.imageContainer {
+  display: flex;
+  background-color: pink;
+  width: 200px;
+}
+/* .imgSize { */
+/* height: 10% !important;
+  width: 20px;
+} */
+.cardContainer {
+  background-color: pink;
+  width: 40px;
+}
